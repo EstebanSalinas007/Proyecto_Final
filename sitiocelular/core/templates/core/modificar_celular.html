@@ -1,0 +1,51 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+
+
+<div class="container">
+
+    <br>
+    <h1 class="text-center"> Quiero un <span class="color-celular">Celular</span> </h1>
+    <h2 class="text-center"><span class="text-muted tamaño">Modificar Celular</span> </h2>
+    
+    <br>
+
+
+</div>
+
+
+
+<div class="container">
+
+    <form action="" method="POST">
+        {% csrf_token  %}
+        <table class="table table-bordered tabla">
+
+        {{ form.as_table  }}
+
+        </table>
+
+        <div class="container">
+
+            <input type="submit" value="Modificar"class="btn btn-primary btn-sm"  > 
+            <input type="reset" value="limpiar" class="btn btn-primary btn-sm" >
+            
+
+        </div>
+    
+
+    
+    </form>
+     <br>
+</div>
+
+<div class="container">
+    
+    {{ mensaje }}
+ 
+ </div>
+
+
+
+{%   endblock  %}

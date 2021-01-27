@@ -1,0 +1,63 @@
+{%  extends 'core/base.html'  %}
+
+{%  block contenido  %}
+
+     
+<div class="container">
+
+    <br>
+    <h1 class="text-center"> Quiero un <span class="color-celular">Celular</span> </h1>
+    <h2 class="text-center"><span class="text-muted tamaño">Listado Celulares</span> </h2>
+    
+    <br>
+
+
+</div>
+
+<div class="container">
+
+    <table  class="table table-bordered tabla" >
+
+        <thead class="thead-dark">
+            <tr>
+
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>Cliente</th>
+                <th>Opciones</th>
+        
+        
+            </tr>
+       </thead>   
+
+        {% for c in celulares %}
+
+            <tr>
+
+                <td>{{ c.marca  }}</td>
+                <td>{{ c.modelo }}</td>
+                <td>{{ c.precio  }}</td>
+                <td>{{ c.cliente  }}</td>
+                
+
+            
+            <td>
+                
+                {% if user.is_authenticated  %}
+                    <a href="{% url 'modificar_celular' c.id %}">Modificar</a>
+                    <a href="{% url 'eliminar_celular' c.id %}">Eliminar</a>
+        
+            </td>
+
+                {% endif %}  
+
+            </tr>  
+        {% endfor  %}
+
+    </table>
+
+</div>
+
+
+{%  endblock  %}

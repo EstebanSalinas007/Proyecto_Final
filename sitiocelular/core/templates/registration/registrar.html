@@ -1,0 +1,41 @@
+{%  extends 'core/base.html'  %}
+
+{%  block contenido  %}
+
+
+
+    <div class="container">
+        <h2 class="text-center">Registro de usuario</h2>
+
+    </div>
+
+    <div class="container ">
+
+    {% load crispy_forms_tags %}
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        <table class="table table-bordered tabla">
+
+            {{ form | crispy }}
+
+        </table>
+        
+       
+            <input type="submit" value="Login" class="btn btn-primary">  
+
+            <input type="reset" value="Limpiar" class="btn btn-primary ">
+
+            
+ 
+
+        
+        
+
+    </form>
+
+    </div>
+
+  <br>
+{%  endblock  %}

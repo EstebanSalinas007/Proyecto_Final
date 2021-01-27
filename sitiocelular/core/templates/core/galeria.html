@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %}
+
+
+{% load static  %}
+
+
+{% block css %}
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  
+
+{% endblock %}
+
+{% block javascript %}
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+
+    
+
+
+    
+
+{% endblock %}
+
+
+
+{% block contenido %}
+
+<div class="container">
+
+    <br>
+    <h1 class="text-center"> Quiero un <span class="color-celular">Celular</span> </h1>
+    <h2 class="text-center"><span class="text-muted tamaño">Galeria</span> </h2>
+    
+    <br>
+
+
+</div>
+
+        
+<div class="container fondo-container ">
+
+    
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular16.jpg" ><img src="{% static 'core/'%}img/celular16.jpg" width="19%"></a>
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular16.jpg" ><img src="{% static 'core/'%}img/celular16.jpg" width="19%"></a>
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular16.jpg" ><img src="{% static 'core/'%}img/celular16.jpg" width="19%"></a>
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular16.jpg" ><img src="{% static 'core/'%}img/celular16.jpg" width="19%"></a>
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular16.jpg" ><img src="{% static 'core/'%}img/celular16.jpg" width="19%" ></a>
+    
+    
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular11.webp"><img src="{% static 'core/'%}img/celular11.webp"></a>
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular15.webp"><img src="{% static 'core/'%}img/celular15.webp"></a>
+    <a data-fancybox="gallery" href="{% static 'core/'%}img/celular15.webp"><img src="{% static 'core/'%}img/celular15.webp"></a>
+   
+    <br>
+    <br>
+    
+
+
+
+ </div>
+ <br>
+ <br>
+
+{% endblock %}     
+

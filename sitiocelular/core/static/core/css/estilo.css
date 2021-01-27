@@ -1,0 +1,123 @@
+#datos {
+
+
+  box-shadow: 10px 10px 5px #888; 
+  border: 2px solid #333;
+  border-radius: 5px;
+
+}
+
+
+.img-logo{
+
+
+  width: 100px;
+  height: 50px;
+
+
+
+}
+
+
+.imagen-presentacion {
+
+
+
+  width: 100%;
+  height: 400px;
+
+
+
+}
+
+.portada {
+
+
+  width: 100%;
+  height: 100%;
+
+
+
+}
+
+.tamaño {
+
+  font-weight: 400px;
+  font-size: 25px;
+  
+
+
+
+}
+
+.color-celular {
+
+
+  color: #ff4646;
+
+
+
+}
+
+.tabla {
+
+
+
+  box-shadow: 10px 10px 5px #888;
+  border: 2px dashed #333;
+  border-radius: 5px;
+
+
+
+}
+
+.boton {
+
+
+
+  display: block;
+
+
+
+}
+
+.bajar {
+
+
+  padding-top: 5em;
+
+
+
+}
+
+.carrito {
+
+
+
+  width: 50px;
+  height: 50px;
+
+
+
+}
+
+.tamaño-carrito {
+
+
+ width: 100%;
+
+}
+
+.fondo-container {
+
+
+
+  background: #fff0f0;
+
+
+
+}
+
+
+
+
